@@ -1,0 +1,53 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1>FastAPI Calculator</h1>
+            <p>Simple calculations with Python & JavaScript</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="calculator-section">
+            <h2>Perform a Calculation</h2>
+            <div class="calculator-grid">
+                <input type="number" id="num1" placeholder="First Number" step="any">
+                
+                <select id="operator" aria-label="Operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                
+                <input type="number" id="num2" placeholder="Second Number" step="any">
+                
+                <button id="calculateBtn">Calculate</button>
+            </div>
+            <div id="result" class="result-display">
+                Enter numbers and select an operator to see the result.
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 FastAPI Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
